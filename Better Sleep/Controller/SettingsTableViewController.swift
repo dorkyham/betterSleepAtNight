@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import HealthKit
 
 class SettingsTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

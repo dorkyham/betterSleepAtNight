@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>UIApplicationExitsOnSuspend</key>
+	<true/>
 	<key>NSHealthShareUsageDescription</key>
 	<string>We need permission to share your Health Data</string>
 	<key>NSHealthUpdateUsageDescription</key>

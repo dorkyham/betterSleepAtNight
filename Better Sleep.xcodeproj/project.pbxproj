@@ -18,6 +18,9 @@
 		B080D8AA2332157B0004A00A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B080D8A92332157B0004A00A /* HealthKit.framework */; };
 		B080D8B02332241C0004A00A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8AF2332241C0004A00A /* RoundedButton.swift */; };
 		B080D8B2233228A40004A00A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8B1233228A40004A00A /* AuthViewController.swift */; };
+		B080D8B423323D580004A00A /* SleepDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8B323323D580004A00A /* SleepDataManager.swift */; };
+		B080D8B723323E4D0004A00A /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8B623323E4D0004A00A /* Alarm.swift */; };
+		B080D8B923323E650004A00A /* BedSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8B823323E650004A00A /* BedSchedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		B080D8AB2332157B0004A00A /* Better Sleep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Better Sleep.entitlements"; sourceTree = "<group>"; };
 		B080D8AF2332241C0004A00A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		B080D8B1233228A40004A00A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		B080D8B323323D580004A00A /* SleepDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDataManager.swift; sourceTree = "<group>"; };
+		B080D8B623323E4D0004A00A /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		B080D8B823323E650004A00A /* BedSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedSchedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 		B080D8542331D35C0004A00A /* Better Sleep */ = {
 			isa = PBXGroup;
 			children = (
+				B080D8B523323E2A0004A00A /* Helper */,
 				B080D8AE233224040004A00A /* Extension */,
 				B080D8AB2332157B0004A00A /* Better Sleep.entitlements */,
 				B080D89F2331DED70004A00A /* Model */,
@@ -142,6 +149,8 @@
 		B080D89F2331DED70004A00A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B080D8B623323E4D0004A00A /* Alarm.swift */,
+				B080D8B823323E650004A00A /* BedSchedule.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +187,14 @@
 				B080D8AF2332241C0004A00A /* RoundedButton.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		B080D8B523323E2A0004A00A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B080D8B323323D580004A00A /* SleepDataManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,9 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B080D8A52331E9950004A00A /* HomeTableViewController.swift in Sources */,
+				B080D8B423323D580004A00A /* SleepDataManager.swift in Sources */,
 				B080D8B02332241C0004A00A /* RoundedButton.swift in Sources */,
 				B080D8B2233228A40004A00A /* AuthViewController.swift in Sources */,
+				B080D8B923323E650004A00A /* BedSchedule.swift in Sources */,
 				B080D8562331D35C0004A00A /* AppDelegate.swift in Sources */,
+				B080D8B723323E4D0004A00A /* Alarm.swift in Sources */,
 				B080D8A72331EFD10004A00A /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

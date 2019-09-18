@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import HealthKit
 
 class HomeTableViewController: UITableViewController {
-
+    
+    
     @IBAction func goToSettings(_ sender: Any) {
     performSegue(withIdentifier: "goToSettings", sender: self)
     }
@@ -33,6 +35,7 @@ class HomeTableViewController: UITableViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
+   
    
 
 }
