@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B080D8562331D35C0004A00A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8552331D35C0004A00A /* AppDelegate.swift */; };
-		B080D8582331D35C0004A00A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8572331D35C0004A00A /* ViewController.swift */; };
-		B080D85B2331D35C0004A00A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B080D8592331D35C0004A00A /* Main.storyboard */; };
 		B080D85D2331D35D0004A00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B080D85C2331D35D0004A00A /* Assets.xcassets */; };
 		B080D8602331D35D0004A00A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B080D85E2331D35D0004A00A /* LaunchScreen.storyboard */; };
 		B080D86B2331D35D0004A00A /* Better_SleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D86A2331D35D0004A00A /* Better_SleepTests.swift */; };
 		B080D8762331D35D0004A00A /* Better_SleepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8752331D35D0004A00A /* Better_SleepUITests.swift */; };
+		B080D8A32331DEED0004A00A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B080D8A22331DEED0004A00A /* Main.storyboard */; };
+		B080D8A52331E9950004A00A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8A42331E9950004A00A /* HomeTableViewController.swift */; };
+		B080D8A72331EFD10004A00A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8A62331EFD10004A00A /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +37,6 @@
 /* Begin PBXFileReference section */
 		B080D8522331D35C0004A00A /* Better Sleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Better Sleep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B080D8552331D35C0004A00A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B080D8572331D35C0004A00A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B080D85A2331D35C0004A00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B080D85C2331D35D0004A00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B080D85F2331D35D0004A00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B080D8612331D35D0004A00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,9 @@
 		B080D8712331D35D0004A00A /* Better SleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Better SleepUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B080D8752331D35D0004A00A /* Better_SleepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Better_SleepUITests.swift; sourceTree = "<group>"; };
 		B080D8772331D35D0004A00A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B080D8A22331DEED0004A00A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B080D8A42331E9950004A00A /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		B080D8A62331EFD10004A00A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,10 @@
 		B080D8542331D35C0004A00A /* Better Sleep */ = {
 			isa = PBXGroup;
 			children = (
+				B080D89F2331DED70004A00A /* Model */,
+				B080D8A12331DEE20004A00A /* Controller */,
+				B080D8A02331DEDD0004A00A /* View */,
 				B080D8552331D35C0004A00A /* AppDelegate.swift */,
-				B080D8572331D35C0004A00A /* ViewController.swift */,
-				B080D8592331D35C0004A00A /* Main.storyboard */,
 				B080D85C2331D35D0004A00A /* Assets.xcassets */,
 				B080D85E2331D35D0004A00A /* LaunchScreen.storyboard */,
 				B080D8612331D35D0004A00A /* Info.plist */,
@@ -123,6 +126,30 @@
 				B080D8772331D35D0004A00A /* Info.plist */,
 			);
 			path = "Better SleepUITests";
+			sourceTree = "<group>";
+		};
+		B080D89F2331DED70004A00A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B080D8A02331DEDD0004A00A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B080D8A22331DEED0004A00A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B080D8A12331DEE20004A00A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B080D8A42331E9950004A00A /* HomeTableViewController.swift */,
+				B080D8A62331EFD10004A00A /* SettingsTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +256,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B080D8A32331DEED0004A00A /* Main.storyboard in Resources */,
 				B080D8602331D35D0004A00A /* LaunchScreen.storyboard in Resources */,
 				B080D85D2331D35D0004A00A /* Assets.xcassets in Resources */,
-				B080D85B2331D35C0004A00A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B080D8582331D35C0004A00A /* ViewController.swift in Sources */,
+				B080D8A52331E9950004A00A /* HomeTableViewController.swift in Sources */,
 				B080D8562331D35C0004A00A /* AppDelegate.swift in Sources */,
+				B080D8A72331EFD10004A00A /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B080D8592331D35C0004A00A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B080D85A2331D35C0004A00A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B080D85E2331D35D0004A00A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

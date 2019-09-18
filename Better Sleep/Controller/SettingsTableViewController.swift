@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SettingsTableViewController.swift
 //  Better Sleep
 //
 //  Created by Annisa Nabila Nasution on 18/09/19.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
 }
-
