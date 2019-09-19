@@ -231,13 +231,13 @@
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10.00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NA7-vh-y1i">
-                                                    <rect key="frame" x="322" y="10" width="72" height="21"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="15 Min" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-mt-xFt">
+                                                    <rect key="frame" x="297" y="7" width="97" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
@@ -256,13 +256,13 @@
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6.00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkH-Y3-M7v">
-                                                    <rect key="frame" x="329" y="11" width="65" height="21"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="15 Min" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RYj-0s-yys">
+                                                    <rect key="frame" x="297" y="8" width="97" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
@@ -299,13 +299,13 @@
                                                     <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15 Min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1B-M2-auy">
-                                                    <rect key="frame" x="344" y="13" width="50" height="21"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="15 Min" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVj-KK-wyP">
+                                                    <rect key="frame" x="297" y="8" width="97" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
@@ -331,8 +331,17 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="n5O-Bs-fZ6"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="jjs-Wh-zsa">
                             <color key="tintColor" red="0.99710172409999998" green="0.58912301060000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="done:" destination="a2A-Bv-zhl" id="gsj-rl-oby"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="endTimeOutlet" destination="RYj-0s-yys" id="S75-HU-krF"/>
+                        <outlet property="reminderOutlet" destination="CVj-KK-wyP" id="BA3-R9-G2W"/>
+                        <outlet property="startTimeOutlet" destination="xmd-mt-xFt" id="grU-WD-PuC"/>
+                        <segue destination="SuB-2k-7MK" kind="show" identifier="goToHomeFromSettings" id="LHC-3E-yS3"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0J-57-p0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -412,5 +421,8 @@
         <image name="SetSleepTimeButtonLong" width="1366.5" height="573"/>
         <image name="StatisticButtonLong" width="1369.5" height="577.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LHC-3E-yS3"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.86033719778060913" green="0.53717172145843506" blue="0.19595715403556824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

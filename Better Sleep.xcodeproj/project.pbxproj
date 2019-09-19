@@ -21,6 +21,9 @@
 		B080D8B423323D580004A00A /* SleepDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8B323323D580004A00A /* SleepDataManager.swift */; };
 		B080D8B723323E4D0004A00A /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8B623323E4D0004A00A /* Alarm.swift */; };
 		B080D8B923323E650004A00A /* BedSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8B823323E650004A00A /* BedSchedule.swift */; };
+		B080D8BB2333254D0004A00A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8BA2333254D0004A00A /* Notification.swift */; };
+		B080D8BD23332E200004A00A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8BC23332E200004A00A /* History.swift */; };
+		B080D8BF23332F080004A00A /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8BE23332F080004A00A /* Sleep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		B080D8B323323D580004A00A /* SleepDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDataManager.swift; sourceTree = "<group>"; };
 		B080D8B623323E4D0004A00A /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		B080D8B823323E650004A00A /* BedSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedSchedule.swift; sourceTree = "<group>"; };
+		B080D8BA2333254D0004A00A /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		B080D8BC23332E200004A00A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		B080D8BE23332F080004A00A /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,9 @@
 			children = (
 				B080D8B623323E4D0004A00A /* Alarm.swift */,
 				B080D8B823323E650004A00A /* BedSchedule.swift */,
+				B080D8BA2333254D0004A00A /* Notification.swift */,
+				B080D8BC23332E200004A00A /* History.swift */,
+				B080D8BE23332F080004A00A /* Sleep.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,6 +278,9 @@
 							com.apple.HealthKit = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 0;
+							};
 						};
 					};
 					B080D8652331D35D0004A00A = {
@@ -333,9 +345,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B080D8BF23332F080004A00A /* Sleep.swift in Sources */,
 				B080D8A52331E9950004A00A /* HomeTableViewController.swift in Sources */,
 				B080D8B423323D580004A00A /* SleepDataManager.swift in Sources */,
+				B080D8BB2333254D0004A00A /* Notification.swift in Sources */,
 				B080D8B02332241C0004A00A /* RoundedButton.swift in Sources */,
+				B080D8BD23332E200004A00A /* History.swift in Sources */,
 				B080D8B2233228A40004A00A /* AuthViewController.swift in Sources */,
 				B080D8B923323E650004A00A /* BedSchedule.swift in Sources */,
 				B080D8562331D35C0004A00A /* AppDelegate.swift in Sources */,
