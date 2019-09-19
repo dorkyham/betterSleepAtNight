@@ -8,11 +8,9 @@
 
 import Foundation
 
-class Sleep {
-    var duration : Int = 0
-    var quality : Int = 0
-    
-    func recordSleep(){
-        
-    }
+struct Sleep {
+    var duration : DateComponents
+    var quality : Int
+    var endDate : Date
+    var startDate : Date
 }

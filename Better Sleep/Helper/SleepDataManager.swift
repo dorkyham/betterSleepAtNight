@@ -14,8 +14,8 @@ class SleepDataManager{
     let alarmTime = NSDate()
     let endTime = NSDate()
     
-    func retrieveSleepAnalysis() {
-        
+    func retrieveSleepAnalysis(completionHandler: @escaping (([Sleep]) -> Void)) {
+        var sleepData : [HKSample] = []
         // first, we define the object type we want
         if let sleepType = HKObjectType.categoryType(forIdentifier: HKCategoryTypeIdentifier.sleepAnalysis){
             
@@ -26,10 +26,7 @@ class SleepDataManager{
             let query = HKSampleQuery(sampleType: sleepType, predicate: nil, limit: 30, sortDescriptors: [sortDescriptor]) { (query, tmpResult, error) -> Void in
                 
                 if error != nil {
-                    
-                    // something happened
                     return
-                    
                 }
                 
                 if let result = tmpResult {
@@ -37,19 +34,49 @@ class SleepDataManager{
                     // do something with my data
                     for item in result {
                         if let sample = item as? HKCategorySample {
-                            print(sample)
+                            //print(sample)
                             
-                            let value = (sample.value == HKCategoryValueSleepAnalysis.inBed.rawValue) ? "InBed" : "Asleep"
+                            //let value = (sample.value == HKCategoryValueSleepAnalysis.inBed.rawValue) ? "InBed" : "Asleep"
                             
-                            print("Healthkit sleep: \(sample.startDate) \(sample.endDate) - value: \(value)")
+                                //print("Healthkit sleep: \(sample.startDate) \(sample.endDate) - value: \(value)")
+                            
+                                sleepData.append(sample)
+                            
+                                DispatchQueue.main.async {
+                                    var listSleep : [Sleep] = []
+                                    if !sleepData.isEmpty{
+                                    listSleep = self.appendSleepData(samples: sleepData)
+                                    }
+                                    else{
+                                        listSleep = []
+                                    }
+                                    
+                                    completionHandler(listSleep)
+                                    
+                                }
+                            }
                         }
                     }
                 }
-            }
             
             // finally, we execute our query
             healthStore.execute(query)
         }
+        
+}
+
+    
+    func appendSleepData(samples:[HKSample])->[Sleep]{
+        var sleeps : [Sleep] = []
+        for item in samples {
+            let duration = Calendar.current.dateComponents([.hour, .minute], from: item.startDate, to: item.endDate)
+            let quality = 0
+        
+            let sleep = Sleep(duration: duration, quality: quality, endDate: item.endDate, startDate: item.startDate)
+            print(sleep)
+            sleeps.append(sleep)
+        }
+        return sleeps
     }
     
     func saveSleepAnalysis() {

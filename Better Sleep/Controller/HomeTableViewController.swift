@@ -34,7 +34,8 @@ class HomeTableViewController: UITableViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
-   
-   
-
+    @IBAction func goToHistory(_ sender: Any) {
+        performSegue(withIdentifier: "goToHistoryFromHome", sender: self)
+    }
+    
 }
