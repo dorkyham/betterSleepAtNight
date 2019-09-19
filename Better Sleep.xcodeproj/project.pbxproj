@@ -24,6 +24,10 @@
 		B080D8BB2333254D0004A00A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8BA2333254D0004A00A /* Notification.swift */; };
 		B080D8BD23332E200004A00A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8BC23332E200004A00A /* History.swift */; };
 		B080D8BF23332F080004A00A /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8BE23332F080004A00A /* Sleep.swift */; };
+		B080D8C523336C1D0004A00A /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8C423336C1D0004A00A /* HistoryTableViewCell.swift */; };
+		B080D8C7233370F50004A00A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8C6233370F50004A00A /* HistoryViewController.swift */; };
+		B080D8C9233374780004A00A /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8C8233374780004A00A /* DetailTableViewCell.swift */; };
+		B080D8CB2333784C0004A00A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B080D8CA2333784C0004A00A /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		B080D8BA2333254D0004A00A /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		B080D8BC23332E200004A00A /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		B080D8BE23332F080004A00A /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
+		B080D8C423336C1D0004A00A /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		B080D8C6233370F50004A00A /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B080D8C8233374780004A00A /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		B080D8CA2333784C0004A00A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				B080D8A22331DEED0004A00A /* Main.storyboard */,
+				B080D8C423336C1D0004A00A /* HistoryTableViewCell.swift */,
+				B080D8C8233374780004A00A /* DetailTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +188,8 @@
 				B080D8A42331E9950004A00A /* HomeTableViewController.swift */,
 				B080D8A62331EFD10004A00A /* SettingsTableViewController.swift */,
 				B080D8B1233228A40004A00A /* AuthViewController.swift */,
+				B080D8C6233370F50004A00A /* HistoryViewController.swift */,
+				B080D8CA2333784C0004A00A /* DetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,6 +293,9 @@
 							com.apple.Push = {
 								enabled = 0;
 							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
 						};
 					};
 					B080D8652331D35D0004A00A = {
@@ -347,8 +362,11 @@
 			files = (
 				B080D8BF23332F080004A00A /* Sleep.swift in Sources */,
 				B080D8A52331E9950004A00A /* HomeTableViewController.swift in Sources */,
+				B080D8C9233374780004A00A /* DetailTableViewCell.swift in Sources */,
+				B080D8C523336C1D0004A00A /* HistoryTableViewCell.swift in Sources */,
 				B080D8B423323D580004A00A /* SleepDataManager.swift in Sources */,
 				B080D8BB2333254D0004A00A /* Notification.swift in Sources */,
+				B080D8C7233370F50004A00A /* HistoryViewController.swift in Sources */,
 				B080D8B02332241C0004A00A /* RoundedButton.swift in Sources */,
 				B080D8BD23332E200004A00A /* History.swift in Sources */,
 				B080D8B2233228A40004A00A /* AuthViewController.swift in Sources */,
@@ -356,6 +374,7 @@
 				B080D8562331D35C0004A00A /* AppDelegate.swift in Sources */,
 				B080D8B723323E4D0004A00A /* Alarm.swift in Sources */,
 				B080D8A72331EFD10004A00A /* SettingsTableViewController.swift in Sources */,
+				B080D8CB2333784C0004A00A /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

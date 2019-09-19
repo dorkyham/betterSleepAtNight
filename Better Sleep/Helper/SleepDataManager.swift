@@ -37,7 +37,10 @@ class SleepDataManager{
                     // do something with my data
                     for item in result {
                         if let sample = item as? HKCategorySample {
+                            print(sample)
+                            
                             let value = (sample.value == HKCategoryValueSleepAnalysis.inBed.rawValue) ? "InBed" : "Asleep"
+                            
                             print("Healthkit sleep: \(sample.startDate) \(sample.endDate) - value: \(value)")
                         }
                     }
